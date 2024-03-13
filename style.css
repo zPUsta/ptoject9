@@ -32,7 +32,7 @@ section{
 .logo img{
     width: 70px;
     filter: drop-shadow(16px 16px 20px rgb(0, 110, 255)) ;
-
+    
     
 }
 
@@ -54,13 +54,13 @@ section{
     gap: 50px;
 }
 
-.hover-underline-animation {
+.hover-underline {
     display: inline-block;
     position: relative;
     color: #0087ca;
-  }
+}
 
-  .hover-underline-animation::after {
+.hover-underline::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -71,15 +71,15 @@ section{
     background-color: #0087ca;
     transform-origin: bottom left;
     transition: transform 0.25s ease-out;
-  }
-  
-  .hover-underline-animation:hover::after {
+}
+
+.hover-underline:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
     box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
--webkit-box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
--moz-box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
-  }
+    -webkit-box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
+    -moz-box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
+}
 .navlist ul li a{
     color: aliceblue;
     font-family: "Slackside One", cursive;
@@ -121,8 +121,8 @@ section{
 } 
 .content{
     display: flex;
-gap: 180px;
-align-items: center;
+    gap: 180px;
+    align-items: center;
     padding: 100px 0px;
 }
 .text{
@@ -144,7 +144,7 @@ align-items: center;
 .text h1:hover{
     text-shadow: 4px 6px 7px rgba(22, 131, 215, 0.75);
     transition: 0.4s;
-   transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 .text p{
     font-size: 30px;
@@ -180,7 +180,7 @@ align-items: center;
 }
 
 .images .image{
-   height: var(--content-imageBox-height);
+    height: var(--content-imageBox-height);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,25 +188,25 @@ align-items: center;
     overflow: hidden;
     position: relative;
     box-shadow: -4px 1px 20px 2px rgba(154, 168, 179, 0.75);
--webkit-box-shadow: -4px 1px 20px 2px rgba(154, 168, 179, 0.75);
--moz-box-shadow: -4px 1px 20px 2px rgba(154, 168, 179, 0.75);
+    -webkit-box-shadow: -4px 1px 20px 2px rgba(154, 168, 179, 0.75);
+    -moz-box-shadow: -4px 1px 20px 2px rgba(154, 168, 179, 0.75);
     width: calc((100% - var(--content-image-gap))/2 );
-
+    
 }
 .images .image:hover{
     transform: scale(1.1);
     transition: 0.5s;
     box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
--webkit-box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
--moz-box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
-   
-
+    -webkit-box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
+    -moz-box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
+    
+    
 }
 .image img{
     height: 100%;
     position: absolute;
-
-
+    
+    
 }
 
 .image .img-content{
@@ -214,12 +214,12 @@ align-items: center;
     bottom: 10px;
     left: 10px;
     right: 5px;
-
+    
 }
 
 .img-content p{
     color: aliceblue;
     font-family: "Poppins", sans-serif;
     font-size: 12px;
-   
+    
 }
