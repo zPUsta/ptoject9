@@ -117,7 +117,6 @@ section{
 :root {
     --content-image-gap:40px ;
     --content-imageBox-height: 300px;
-    
 } 
 .content{
     display: flex;
@@ -127,7 +126,6 @@ section{
 }
 .text{
     width: 40%;
-    
 }
 
 .text-box{
