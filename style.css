@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slackside+One&display=swap');
+/* font-family: "Slackside One", cursive; 
+font-family: "Poppins", sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* navbar */
+section{
+    background-image: linear-gradient(61deg, rgba(28, 28, 29, 0.368) 0%, rgba(1, 1, 1, 0.264) 100%), url("https://images.unsplash.com/photo-1656608138197-2aea23cc3564?q=80&w=1977&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.container{
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.navbar{
+    padding: 10px 0px;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 70px;
+    filter: drop-shadow(16px 16px 20px rgb(0, 110, 255)) ;
+
+    
+}
+
+.logo img:hover{
+    transform: rotatey(0.5turn);
+    transition: 1s;
+    transition-duration: 1.5s;
+    transform-style: preserve-3d;
+}
+.navLink {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    
+}
+.navlist ul{
+    display: flex;
+    gap: 50px;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
+-webkit-box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
+-moz-box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
+  }
+.navlist ul li a{
+    color: aliceblue;
+    font-family: "Slackside One", cursive;
+    font-size: 30px;
+}
+
+
+.icon{
+    position: relative;
+    top: 20px;
+    height: 80px;
+    width: 80px;
+}
+.icon i:last-of-type{
+    color: aliceblue;
+    font-size: 50px;
+    position: absolute;
+    filter: drop-shadow(0px 0px 10px rgb(216, 222, 230)) ;
+}
+.icon i:first-of-type{
+    color: rgba(22, 131, 215);
+    font-size: 30px;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    z-index: 1;
+    
+}
+/* X-navbar */
+
+/* ---------------------------------------------- */
+
+/* Content */
+
+:root {
+    --content-image-gap:40px ;
+    --content-imageBox-height: 300px;
+    
+} 
+.content{
+    display: flex;
+gap: 180px;
+align-items: center;
+    padding: 100px 0px;
+}
+.text{
+    width: 50%;
+    padding-right: 50px ;
+    
+}
+
+.text-box{
+    padding: 20px 0px;
+}
+.text p,h1{
+    color: aliceblue;
+    font-family: "Slackside One", cursive;
+}
+.text h1{
+    font-size: 90px;
+}
+.text h1:hover{
+    text-shadow: 4px 6px 7px rgba(22, 131, 215, 0.75);
+    transition: 0.4s;
+   transition-duration: 0.3s;
+}
+.text p{
+    font-size: 30px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color: #0087ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.btn:hover{
+    transition: 1s;
+    transform-origin: buttom left ;
+    transition: transform 0.3s ease-in-out;
+    background: linear-gradient(to bottom right, rgb(0, 89, 255), rgb(112, 189, 231));
+}
+
+.btn a{
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+}
+.images{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--content-image-gap);
+}
+
+.images .image{
+   height: var(--content-imageBox-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: -4px 1px 20px 2px rgba(154, 168, 179, 0.75);
+-webkit-box-shadow: -4px 1px 20px 2px rgba(154, 168, 179, 0.75);
+-moz-box-shadow: -4px 1px 20px 2px rgba(154, 168, 179, 0.75);
+    width: calc((100% - var(--content-image-gap))/2 );
+
+}
+.images .image:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
+-webkit-box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
+-moz-box-shadow: -4px 1px 20px 2px rgba(22, 131, 215, 0.75);
+   
+
+}
+.image img{
+    height: 100%;
+    position: absolute;
+
+
+}
+
+.image .img-content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 5px;
+
+}
+
+.img-content p{
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+   
+}
