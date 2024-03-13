@@ -121,13 +121,12 @@ section{
 } 
 .content{
     display: flex;
-    gap: 180px;
     align-items: center;
     padding: 100px 0px;
+    justify-content: space-between;
 }
 .text{
-    width: 50%;
-    padding-right: 50px ;
+    width: 40%;
     
 }
 
@@ -172,7 +171,7 @@ section{
     font-family: "Poppins", sans-serif;
 }
 .images{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
